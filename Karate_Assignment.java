@@ -17,7 +17,7 @@ public class Karate_Assignment
 public static int get_pet_id(String Runtime_TC_ID) throws IOException
 {
     int xl_pet_id = 0;
-    FileInputStream fis = new FileInputStream(new File("C:/Users/anshumanm/Downloads/Pet_Details_Karate_Assignment.xlsx"));
+    FileInputStream fis = new FileInputStream(new File("C:/Users/prashanthram/Downloads/Pet_Details_Karate_Assignment.xlsx"));
     XSSFWorkbook wb = new XSSFWorkbook(fis);
     XSSFSheet sheet = wb.getSheetAt(0);
     for (Row row : sheet)
@@ -38,7 +38,7 @@ public static int get_pet_id(String Runtime_TC_ID) throws IOException
     public static String get_pet_name(String Runtime_TC_ID) throws IOException
     {
         String xl_pet_name = null;
-        FileInputStream fis = new FileInputStream(new File("C:/Users/anshumanm/Downloads/Pet_Details_Karate_Assignment.xlsx"));
+        FileInputStream fis = new FileInputStream(new File("C:/Users/prashanthram/Downloads/Pet_Details_Karate_Assignment.xlsx"));
         XSSFWorkbook wb = new XSSFWorkbook(fis);
         XSSFSheet sheet = wb.getSheetAt(0);
         for (Row row : sheet)
